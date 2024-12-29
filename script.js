@@ -24,5 +24,3 @@ function operate(a, operator, b) {
   if (operator === "*") return multiply(a, b);
   if (operator === "/") return divide(a, b);
 }
-
-console.log(operate(5, "*", 5));
