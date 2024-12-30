@@ -2,7 +2,7 @@ let a;
 let operator;
 let b;
 const span = document.querySelector("span.display-right-padding");
-console.log(span);
+const one = document.querySelector;
 
 function add(a, b) {
   return a + b;
