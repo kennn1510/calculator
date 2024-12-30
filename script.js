@@ -4,10 +4,10 @@ let b;
 const span = document.querySelector("span.display-right-padding");
 const numbers = document.querySelectorAll(".num");
 
-// I need to add addEventListener with click and executes function to add button's number to span display
 numbers.forEach((num) => {
   num.addEventListener("click", (e) => {
     span.innerText = e.target.innerText;
+    a = parseInt(e.target.innerText);
   });
 });
 
