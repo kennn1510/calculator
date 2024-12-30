@@ -28,10 +28,28 @@
           font-size: 48px;
         }
       }
+      .css-selector {
+        background: linear-gradient(270deg, #baee19, #ee3719, #19aaee);
+        background-size: 600% 600%;
+
+        animation: yellow-to-red 30s ease infinite;
+      }
+
+      @keyframes yellow-to-red {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
     </style>
   </head>
   <body>
-    <div class="calc">
+    <div class="calc css-selector">
       <div class="display">0</div>
       <div class="container">
         <button class="clear">AC</button>

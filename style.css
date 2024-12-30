@@ -12,11 +12,11 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(
+  /* background: linear-gradient(
     72deg,
     rgba(34, 193, 195, 1) 0%,
     rgba(253, 187, 45, 1) 100%
-  );
+  ); */
 }
 
 .display {
@@ -47,7 +47,7 @@ button {
   flex: 1 1 25%;
   height: 10vh;
   font-size: 3vw;
-  border: black solid 0.2vw;
+  border: black solid git 0.2vw;
   border-radius: 0.3rem;
 }
 
