@@ -25,11 +25,15 @@ body {
   align-items: center;
   background-color: rgb(128 128 128/50%);
   width: 40vw;
-  height: 10vh;
-  font-size: 8vh;
+  height: 9vh;
+  font-size: 6vw;
   border: black solid 1vw;
   border-radius: 1rem 1rem 0 0;
   border-bottom: 0;
+}
+
+.display-right-padding {
+  padding: 1vw;
 }
 
 .container {
