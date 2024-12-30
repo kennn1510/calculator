@@ -12,18 +12,18 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  /* background: linear-gradient(
+  background: linear-gradient(
     72deg,
     rgba(34, 193, 195, 1) 0%,
     rgba(253, 187, 45, 1) 100%
-  ); */
+  );
 }
 
 .display {
   display: flex;
   justify-content: end;
   align-items: center;
-  background-color: grey;
+  background-color: rgb(128 128 128/50%);
   width: 40vw;
   height: 10vh;
   font-size: 8vh;
