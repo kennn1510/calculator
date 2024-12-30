@@ -30,7 +30,8 @@ buttons.forEach((button) => {
             b = parseInt(span.innerText);
           }
       }
-      console.log(b);
+    }
+    if (button.classList.contains("dot")) {
     }
     if (button.classList.contains("operand")) {
       operator = button.innerText;
@@ -50,6 +51,7 @@ function clear() {
   a = 0;
   b = 0;
   operator = undefined;
+  isFirstNumber = true;
   span.innerText = "0";
 }
 
