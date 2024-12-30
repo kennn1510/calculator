@@ -1,6 +1,7 @@
 let a = 0;
 let operator = undefined;
 let b = 0;
+let isFirstNumber = true;
 const span = document.querySelector("span.display-right-padding");
 const equal = document.querySelector(".equal");
 const numbers = document.querySelectorAll(".num");
@@ -9,28 +10,31 @@ const buttons = document.querySelectorAll("button");
 buttons.forEach((button) => {
   button.addEventListener("click", (e) => {
     if (button.classList.contains("num")) {
-      if (operator === undefined) {
-        if (span.innerText === "0") {
+      if (!operator) {
+        if (isFirstNumber === true) {
           span.innerText = button.innerText;
           a = parseInt(span.innerText);
+          isFirstNumber = false;
         } else {
           span.innerText += button.innerText;
           a = parseInt(span.innerText);
         }
       } else {
-        // span.innerText = "0";
-        if (span.innerText === "0") {
-          span.innerText = button.innerText;
-          b = parseInt(span.innerText);
-        } else {
-          span.innerText += button.innerText;
-          b = parseInt(span.innerText);
-        }
+        if (operator)
+          if (isFirstNumber === true) {
+            span.innerText = button.innerText;
+            b = parseInt(span.innerText);
+            isFirstNumber = false;
+          } else {
+            span.innerText += button.innerText;
+            b = parseInt(span.innerText);
+          }
       }
       console.log(b);
     }
     if (button.classList.contains("operand")) {
       operator = button.innerText;
+      isFirstNumber = true;
     }
     if (button.classList.contains("equal")) {
       span.innerText = operate(a, operator, b);
