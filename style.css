@@ -54,6 +54,9 @@ button {
   border: black solid git 0.2vw;
   border-radius: 0.3rem;
 }
+button:hover {
+  background-color: grey;
+}
 
 .plus,
 .minus,

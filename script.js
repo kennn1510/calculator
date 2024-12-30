@@ -2,12 +2,20 @@ let a;
 let operator;
 let b;
 const span = document.querySelector("span.display-right-padding");
+const equal = document.querySelector(".equal");
 const numbers = document.querySelectorAll(".num");
+const buttons = document.querySelectorAll("button");
 
-numbers.forEach((num) => {
-  num.addEventListener("click", (e) => {
-    span.innerText = e.target.innerText;
-    a = parseInt(e.target.innerText);
+buttons.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    if (button.classList.contains("num")) {
+      span.innerText = e.target.innerText;
+      a = parseInt(e.target.innerText);
+      console.log(a);
+    } else {
+      operator = e.target.innerText;
+      console.log(operator);
+    }
   });
 });
 
