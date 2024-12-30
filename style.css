@@ -24,7 +24,7 @@ body {
   justify-content: end;
   align-items: center;
   background-color: grey;
-  width: 80vw;
+  width: 40vw;
   height: 10vh;
   font-size: 8vh;
   border: black solid 1vw;
@@ -35,7 +35,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 80vw;
+  width: 40vw;
   border: black solid 1vw;
   border-top: 0;
 }
@@ -48,6 +48,34 @@ button {
   border: black solid 0.2vw;
 }
 
+.plus,
+.minus,
+.times,
+.divide,
 .equal {
+  background-color: orange;
+}
+
+.clear,
+.backspace,
+.modulo {
+  background-color: skyblue;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.zero,
+.dot {
+  background-color: beige;
+}
+
+.zero {
   flex-basis: 50%;
 }

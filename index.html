@@ -5,13 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=backspace"
+    />
+    <style>
+      @media (width < 800px) {
+        .material-symbols-outlined {
+          font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+          font-size: 24px;
+        }
+      }
+      @media (800px <= width <= 1000px) {
+        .material-symbols-outlined {
+          font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 36;
+          font-size: 36px;
+        }
+      }
+      @media (1000px < width) {
+        .material-symbols-outlined {
+          font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+          font-size: 48px;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="calc">
       <div class="display">0</div>
       <div class="container">
         <button class="clear">AC</button>
-        <button class="plusminus">+/-</button>
+        <button class="backspace material-symbols-outlined">backspace</button>
         <button class="modulo">%</button>
         <button class="plus">+</button>
         <button class="one">1</button>
